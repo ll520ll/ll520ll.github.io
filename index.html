@@ -253,8 +253,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我草拟</p>
+        <html>
+<head>
+<meta charset="UTF-8">
+<title>轮播图</title>
+<style type="text/css">
+* {
+    background-color: pink;
+}
 
+<p>#header {<br>    color: white;<br>    padding: 10px;<br>    text-align: center;<br>}</p>
+<p>#left {<br>    line-height: 100px;<br>    height : 1440px;<br>    width: 200px;<br>    padding: 50px;<br>    float: left;<br>    height: 1440px;<br>}</p>
+<p>#right {<br>    color: red;<br>    font-size: 20px;<br>    text-align: center;<br>    padding: 5px;<br>    float: left;<br>}</p>
+<p>#footer {<br>    color: white;<br>    text-align: center;<br>    padding: 5px;<br>    clear: both;<br>}<br></style></p>
+<script type="text/javascript">
+    function init() {
+        setInterval("changeImg()", 3000);
+    }
+
+    var i = 1;
+    function changeImg() {
+        i++;
+        document.getElementById("lunbotu").src = "ll520ll/" + i + ".jpg";
+        if (i == 13)
+            i = 0;
+    }
+</script>
+</head>
+<body onload="init() ;">
+
+
+<pre><code>&lt;div id=&quot;header&quot;&gt;ll520ll空间&lt;/div&gt;
+&lt;div id=&quot;left&quot;&gt;
+    我家老婆是小傻瓜&lt;br /&gt;我家老婆是小猪猪&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;right&quot;&gt;
+    &lt;img id=&quot;lunbotu&quot; src=&quot;ll520ll/1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;爱这个傻逼一万年&lt;/div&gt;</code></pre>
+</body>
+
+</html>
       
     </div>
     
